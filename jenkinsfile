@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Test') {
             steps {
                 echo 'Hello World'
             }
         }
-        stage('saludar a edin'){
+        stage('Execute file sh'){
             steps {
                 sh 'ls -la'
                 echo 'hola desde ls'
