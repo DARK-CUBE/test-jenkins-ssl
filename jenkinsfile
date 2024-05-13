@@ -9,8 +9,13 @@ pipeline {
         }
         stage('Execute file sh'){
             steps {
-                sh 'chmod 750 test.sh'
+                sh 'chmod 750 *.sh'
                 sh './test.sh'
+            }
+        }
+        stage('Execute extrac web'){
+            steps {
+                sh './web.sh'
             }
         }
     }
