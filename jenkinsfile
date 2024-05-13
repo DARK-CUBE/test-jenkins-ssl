@@ -9,7 +9,7 @@ pipeline {
         }
         stage('saludar a edin'){
             steps {
-                ls -la
+                sh 'ls -la'
                 echo 'hola desde ls'
             }
         }
