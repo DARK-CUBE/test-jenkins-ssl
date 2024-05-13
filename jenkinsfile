@@ -9,7 +9,8 @@ pipeline {
         }
         stage('saludar a edin'){
             steps {
-                echo 'hola edin como estas'
+                ls -la
+                echo 'hola desde ls'
             }
         }
     }
